@@ -1,0 +1,47 @@
+[
+    {
+        "label": "add_order",
+        "kind": 2,
+        "importPath": "Classwork",
+        "description": "Classwork",
+        "peekOfCode": "def add_order():\n    global Total\n    Total = 0\n    Table_size = input(\"Enter table size: \")\n    print(\"\"\"\n          Menu:\n          1: Pie - $8.00\n          2: Fish - $9.00\n          3: Pasta - $10.00\n          4: Steak - $14.00",
+        "detail": "Classwork",
+        "documentation": {}
+    },
+    {
+        "label": "display_orders",
+        "kind": 2,
+        "importPath": "Classwork",
+        "description": "Classwork",
+        "peekOfCode": "def display_orders():\n    print(\"Name\\tOrder\\tPrice\")\n    for name, order in orders.items():\n        print(f\"{name}\\t{order['order']}\\t{order['price']}\")\n    global Leave\n    Leave = input(\"Would you like to leave (y/n): \")\nwhile True:\n    print(\"1. Add order\")\n    print(\"2. Display orders\")\n    print(\"3. Quit\")",
+        "detail": "Classwork",
+        "documentation": {}
+    },
+    {
+        "label": "orders",
+        "kind": 5,
+        "importPath": "Classwork",
+        "description": "Classwork",
+        "peekOfCode": "orders = {}\ndef add_order():\n    global Total\n    Total = 0\n    Table_size = input(\"Enter table size: \")\n    print(\"\"\"\n          Menu:\n          1: Pie - $8.00\n          2: Fish - $9.00\n          3: Pasta - $10.00",
+        "detail": "Classwork",
+        "documentation": {}
+    },
+    {
+        "label": "Payment_Type",
+        "kind": 5,
+        "importPath": "Classwork",
+        "description": "Classwork",
+        "peekOfCode": "Payment_Type = input(\"How would you like to pay? (Cash or Credit): \")\nif Payment_Type == \"Cash\":\n    pass\nelif Payment_Type == \"Credit\":\n    Surcharge = Total * 0.10\nwhile True:    \n    Tip = input(\"Would you like to leave a tip? (y/n): \")\n    if Tip == \"y\":\n        Tip_Amount = float(input(\"How much would you like to leave? (Enter as decimal): \"))\n        Final_Total = Total + Tip_Amount",
+        "detail": "Classwork",
+        "documentation": {}
+    },
+    {
+        "label": "Final_Total",
+        "kind": 5,
+        "importPath": "Classwork",
+        "description": "Classwork",
+        "peekOfCode": "Final_Total = Final_Total + Surcharge\nif Payment_Type == \"Credit\":\n    print(f\"Your total is ${round(Total, 2)}.\")\n    print(f'Payment Method: {Payment_Type}')\n    print(f'Card Surcharge: ${round(Surcharge, 2)}')\n    print(f'Tip: ${round(Tip_Amount, 2)}')\n    print(f'Final total: ${round(Final_Total, 2)}')\nelif Payment_Type == \"Cash\":\n    print(f\"Your total is ${round(Total, 2)}.\")\n    print(f'Payment Method: {Payment_Type}')",
+        "detail": "Classwork",
+        "documentation": {}
+    }
+]
